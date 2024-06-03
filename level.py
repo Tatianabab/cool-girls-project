@@ -42,10 +42,10 @@ class Level:
     def restart_level(self):
         self.game.player.current_hp = self.game.player.hp
         self.game.settings.player_score = 0
-        self.game.level_now.enemy_group.empty()
-        self.game.level_now.explosion_group.empty()
+        self.game.enemy_group.empty()
+        self.game.explosion_group.empty()
         self.game.level_now.last_enemy_spawn_time = 0
-        self.game.level_now.current_spawn_delay = self.game.levels[self.game.current_game_level - 1].enemy_spawn_delay
+        self.game.level_now.current_spawn_delay = self.game.levels[self.game.current_game_level].enemy_spawn_delay
         self.game.game_over = False
 
     def switch_level(self, direction):

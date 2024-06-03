@@ -134,7 +134,7 @@ class Game:
         self.player_record_score_text_rect.top = 100
         self.screen.blit(self.player_record_score_text, self.player_record_score_text_rect)
         if self.settings.button_start.draw(self.screen):
-            print(self.level_now.enemy_speed)
+            self.restart_game()
             self.game_begin = True
             self.in_menu = False
         if self.settings.options_button.draw(self.screen):
