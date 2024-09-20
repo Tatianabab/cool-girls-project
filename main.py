@@ -120,7 +120,6 @@ class Game:
             self.level_now.switch_level("backward")
         if self.settings.forward_button.draw(self.screen):
             self.level_now.switch_level("forward")
-
         self.screen.blit(self.settings.levels_in_db[self.current_game_level]['image'],
                          self.settings.levels_in_db[self.current_game_level]['image'].get_rect(center=self.screen.get_rect().center))
         pygame.display.update()
@@ -145,8 +144,6 @@ class Game:
             self.in_level = True
         if self.settings.button_exit.draw(self.screen):
             exit()
-
-
         pygame.display.update()
 
     def _update_options_screen(self):

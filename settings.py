@@ -52,14 +52,6 @@ class Settings:
 
         self.icon = pygame.image.load('images/icon.png')
 
-        # self.levels_count = {}
-        # for i in range(1, 6):
-        #     self.levels_s = pygame.image.load(f'images/level_{i}.png')
-        #     self.levels_s = pygame.transform.scale(self.levels_s, (80, 80))
-        #     self.levels_count[i - 1] = {}
-        #     self.levels_count[i - 1]['level'] = self.levels_s
-        # self.level_index = 0
-
         self.player_ships = {}
         for i in range(1, 7):
             self.player_ship = pygame.image.load(f'images/ship_{i}.png')
@@ -67,7 +59,7 @@ class Settings:
             self.player_ships[i - 1] = {}
             self.player_ships[i - 1]['ship'] = self.player_ship
 
-        self.player_ships[0]['hp'] = 200
+        self.player_ships[0]['hp'] = 90
         self.player_ships[0]['speed'] = 6
         self.player_ships[0]['damage'] = 9
 

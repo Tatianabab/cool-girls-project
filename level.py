@@ -57,9 +57,3 @@ class Level:
             elif direction == "backward":
                 self.game.current_game_level = (self.game.current_game_level - 1) % total_level
         print(self.game.current_game_level + 1)
-            # self.settings.update_bd('levels', 'level_index', self.current_level_index)
-            # self.levels_count = self.settings.levels_count[self.current_level_index]['level']
-            # self.rect = self.levels_count.get_rect()
-            # self.rect.midbottom = (self.screen_rect.midbottom[0], self.screen_rect.midbottom[1] - 10)
-            # self.level_description_rect = self.level_description.get_rect(center=(self.settings.screen_width // 2,
-            #                                                                     self.settings.screen_height // 2 + 60))
